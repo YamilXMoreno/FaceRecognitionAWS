@@ -13,7 +13,7 @@ images = [
     ('image8.jpg', 'Elon Musk'),
     ('image9.jpg', 'Leonardo DiCaprio'),
     ('image10.jpg', 'Leonardo DiCaprio'),
-    ('image11.jpg', 'Sundar Pichai')
+    ('image11.jpg', 'Sundar Pichai'),
     ('image12.jpg', 'Sundar Pichai')
 ]
 
