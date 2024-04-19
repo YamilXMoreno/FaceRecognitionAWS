@@ -13,7 +13,7 @@ with Image.open(image_path) as image:
     image_binary = stream.getvalue()
 
 response = rekognition.search_faces_by_image(
-    CollectionId='famouspersons-faces',
+    CollectionId='famouspersons',
     Image={'Bytes': image_binary}
 )
 
