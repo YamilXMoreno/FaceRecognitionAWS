@@ -22,7 +22,7 @@ for match in response['FaceMatches']:
     print(match['Face']['FaceId'], match['Face']['Confidence'])
 
     face = dynamodb.get_item(
-        TableName='face_recognition',
+        TableName='FaceRecognition',
         Key={'RekognitionId': {'S': match['Face']['FaceId']}}
     )
 
