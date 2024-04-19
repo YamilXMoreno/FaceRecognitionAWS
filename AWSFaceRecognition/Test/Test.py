@@ -13,7 +13,7 @@ with Image.open(image_path) as image:
     image_binary = stream.getvalue()
 
 response = rekognition.search_faces_by_image(
-    CollectionId='famouspersons',
+    CollectionId='famouspersons-faces',
     Image={'Bytes': image_binary}
 )
 
@@ -32,3 +32,4 @@ for match in response['FaceMatches']:
 
 if not found:
     print("Person cannot be recognized")
+
