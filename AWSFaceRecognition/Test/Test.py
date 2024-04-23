@@ -28,7 +28,7 @@ try:
             Key={'RekognitionId': {'S': match['Face']['FaceId']}}
         )
 
-        if 'Item' in FaceRecognition:
+        if 'Item' in face:
             print("Found Person: ", face['Item']['FullName']['S'])
             found = True
 
